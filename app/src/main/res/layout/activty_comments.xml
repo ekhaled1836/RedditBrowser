@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.comments.CommentsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefresh_comments">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@color/background_posts"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomBar_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/background_bottomBar"
+            app:fabAlignmentMode="end"
+            app:fabCradleMargin="5.5dp"
+            app:fabCradleRoundedCornerRadius="32dp"
+            app:fabCradleVerticalOffset="0dp"
+            app:hideOnScroll="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/bottomBar_comments"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

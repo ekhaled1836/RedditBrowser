@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF6D00</color>
+
+    <color name="background_status">#141414</color>
+    <color name="background_navigationBar">#141414</color>
+    <color name="background_posts">#1c1e20</color>
+    <color name="background_bottomBar">#222222</color>
+    <color name="background_card">#292929</color>
+
+    <color name="tint_post">#E0E0E0</color>
+    <color name="tint_post_button_upvote">#ffa726</color>
+    <color name="tint_post_button_downvote">#ab47bc</color>
+    <color name="tint_post_button_save">#ffee58</color>
+
+    <color name="text_title_normal">#ffffff</color>
+    <color name="text_title_moderator">#d4e157</color>
+
+    <color name="text_flair_user">#ff7043</color>
+    <color name="text_flair_post">#26c6da</color>
+    <color name="text_flair_stickied">#26a69a</color>
+    <color name="text_flair_archived">#9ccc65</color>
+    <color name="text_flair_locked">#66bb6a</color>
+    <color name="text_flair_nsfw">#ef5350</color>
+    <color name="text_flair_spoiler">#ec407a</color>
+
+    <color name="mask_silver">#78909c</color>
+    <color name="mask_gold">#ffee58</color>
+    <color name="mask_platinum">#263238</color>
+</resources>

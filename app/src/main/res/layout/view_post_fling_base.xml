@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_post_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintTop_toBottomOf="@id/view_post_barrier_base"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/view_post_container_flex_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            app:flexWrap="wrap"
+            app:layout_constraintTop_toBottomOf="@id/view_post_text_title">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_post"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_post" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_user"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_user" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_user" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/tint_post"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_subreddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_post" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_nsfw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_nsfw"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/flair_nsfw"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_nsfw" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/view_post_icon_silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/round_stars_white_18"
+                app:tint="@color/mask_silver" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_silverCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/mask_silver" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/view_post_icon_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/round_stars_white_18"
+                app:tint="@color/mask_gold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_goldCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/mask_gold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/view_post_icon_platinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/round_stars_white_18"
+                app:tint="@color/mask_platinum" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_text_platinumCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/mask_platinum" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_archived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_archived"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/flair_archived"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_archived" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_locked"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/flair_locked"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_locked" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_spoiler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_spoiler"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/flair_spoiler"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_spoiler" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_post_flair_stickied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_flair_stickied"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/flair_stickied"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/text_flair_stickied" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/view_post_button_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/round_more_vert_white_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_post_container_flex_subtitle" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/view_post_button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/round_favorite_white_24"
+            app:layout_constraintEnd_toStartOf="@id/view_post_button_more"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/view_post_button_downvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/round_arrow_downward_white_24"
+            app:layout_constraintEnd_toStartOf="@id/view_post_button_save"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/view_post_button_upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/round_arrow_upward_white_24"
+            app:layout_constraintEnd_toStartOf="@id/view_post_button_downvote"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/view_post_button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/round_share_white_24"
+            app:layout_constraintEnd_toStartOf="@id/view_post_button_upvote"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/view_post_icon_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/round_score_white_18"
+            app:layout_constraintBottom_toBottomOf="@id/view_post_button_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more"
+            app:tint="@color/tint_post" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_post_text_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/tint_post"
+            app:layout_constraintBottom_toBottomOf="@id/view_post_button_more"
+            app:layout_constraintStart_toEndOf="@id/view_post_icon_score"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/view_post_icon_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/round_comment_white_18"
+            app:layout_constraintBottom_toBottomOf="@id/view_post_button_more"
+            app:layout_constraintStart_toEndOf="@id/view_post_text_score"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more"
+            app:tint="@color/tint_post" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_post_text_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/tint_post"
+            app:layout_constraintBottom_toBottomOf="@id/view_post_button_more"
+            app:layout_constraintStart_toEndOf="@id/view_post_icon_comment"
+            app:layout_constraintTop_toTopOf="@id/view_post_button_more" />
+</merge>
